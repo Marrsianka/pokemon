@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+   
+body {
+    min-width: 1100px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Comfortaa', cursive;
+    color: #212121;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 50px ;
+    position: relative;
+}
+
+.container .container {
+    padding: 0;
+}
+
+.container .container .poke-group-count {
+    right: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+header {
+    min-height: 102px;
+    padding-top: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.header-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3F51B5;
+}
+
+.header-img {
+    float: left;
+    width: 210px;
+    height: 102px;
+}
+
+.header-img img {
+    width: 210px;
+    height: 102px;
+}
+
+.header-nav {
+    float: right;
+    margin-left: 20px;
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.header-nav li {
+    float: left;
+    padding: 0 9px;
+    text-transform: uppercase;
+    border-right: 1px solid #3F51B5;
+}
+
+.header-nav li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #3F51B5;
+}
+
+.header-nav a:hover {
+    color: #FFC107;
+}
+
+.header-nav a:active {
+    color: #757575;
+}
+
+.poke-group-count {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.poke-group-catch {
+    display: none;
+}
+
+.poke-group-catch ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.poke-group-item {
+    display: inline-block;
+    width: 165px;
+    min-height: 228px;
+    border: 1px solid #C5CAE9;
+    margin: 10px 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+.poke-group-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:0px 0px 10px #BDBDBD;
+    transition: all 0.5s;
+}
+
+.poke-group-item-img {    
+    width: 167px;
+    height: 167px;
+    margin: -1px 0 0 -1px;
+}
+
+.poke-group-item-info {
+    margin: 3px;    
+    padding: 0 5px;
+}
+
+.poke-group-item-evolution {
+    float: left;
+    margin-top: 5px;
+}
+
+.evo {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-right: 3px;
+    border: 3px solid #757575;
+    border-radius: 10px;
+}
+
+.mega {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-right: 3px;
+    border: 3px solid #BF4E4E;
+    border-radius: 10px;
+}
+
+.poke-group-item-type {
+    float: right;
+    text-align: right;
+}
+
+.type {    
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin-left: 3px;
+}
+
+.type.bug {    
+    background-image: url("img/types/bug.png");
+}
+
+.type.dark {    
+    background-image: url("img/types/dark.png");
+}
+
+.type.dragon {    
+    background-image: url("img/types/dragon.png");
+}
+
+.type.electric {    
+    background-image: url("img/types/electric.png");
+}
+
+.type.fairy {    
+    background-image: url("img/types/fairy.png");
+}
+
+.type.fighting {    
+    background-image: url("img/types/fighting.png");
+}
+
+.type.fire {    
+    background-image: url("img/types/fire.png");
+}
+
+.type.flying {    
+    background-image: url("img/types/flying.png");
+}
+
+.type.ghost {    
+    background-image: url("img/types/ghost.png");
+}
+
+.type.grass {    
+    background-image: url("img/types/grass.png");
+}
+
+.type.ground {    
+    background-image: url("img/types/ground.png");
+}
+
+.type.ice {    
+    background-image: url("img/types/ice.png");
+}
+
+.type.normal {    
+    background-image: url("img/types/normal.png");
+}
+
+.type.poison {    
+    background-image: url("img/types/poison.png");
+}
+
+.type.psychic {    
+    background-image: url("img/types/psychic.png");
+}
+
+.type.rock {    
+    background-image: url("img/types/rock.png");
+}
+
+.type.steel {    
+    background-image: url("img/types/steel.png");
+}
+
+.type.water {    
+    background-image: url("img/types/water.png");
+}
+
+
+.poke-group-item-name {
+ margin: 3px 3px 7px;
+ font-weight: bold;
+ color: #303F9F;
+ text-align: center;
+}
+
+footer {
+    min-height: 256px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3F51B5;
+}
+
+.footer-useful {
+    float: left;
+    list-style: none;
+    width: 207px;
+    min-height: 176px;
+    padding: 40px 15px 40px 50px;
+    margin: 0;
+}
+
+.footer-useful a {    
+    text-decoration: none;
+    color: #3F51B5;
+}
+
+.footer-useful a:hover {
+    color: #FFC107;
+}
+
+.footer-useful a:active {
+    color: #757575;
+}
+
+.footer-image {
+    float: right;
+    width: 256px;
+    height: 256px;
+}
+
+.footer-image img {
+    width: 256px;
+    height: 256px;
+}
+
+/*ставить done к evo, когда достигнута 1-2-3 эволюция*/
+.evo.done {
+    background-color: #757575;
+}
+
+/*ставить done к mega, когда достигнута мега-эволюция*/
+.mega.done {
+    background-color: #BF4E4E;
+}
+
+/*ставить к type, если у пойманного покемона какой-то тип пока что заблокирован*/
+.type.block {
+    opacity: 0.2;
+}
+
+/*ставить к item, когда покемон пойман (+ эволюцию)*/
+.done {
+    opacity: 1;
+}
