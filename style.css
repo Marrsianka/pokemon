@@ -37,6 +37,7 @@ h2 {
     margin: 10px 0;
     font-weight: normal;
     font-size: 24px;
+    line-height: 24px;
 }
 
 header {
@@ -95,17 +96,64 @@ header {
     color: #757575;
 }
 
+.poke-group-tab {
+    position: relative;    
+    overflow: hidden;
+}
+
+.poke-group-tab input {    
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.poke-group-tab label {
+    position: relative;
+    display: block;
+    cursor: pointer;    
+    width: fit-content;
+    padding-right: 24px;
+}
+
+.poke-group-tab-info {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.poke-group-tab input:checked ~ .poke-group-tab-info {
+    max-height: 100vh;
+}
+
+.poke-group-tab label::after {    
+    content: "\25bd";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.poke-group-tab input:checked + label::after {
+    transform: rotate(180deg);
+}
+
 .poke-group-count {
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 50px;
     font-size: 20px;
 }
 
+/*удалить*/
 .poke-group-catch {
     display: none;
 }
 
+/*удалить*/
 .poke-group-catch ul {
     margin: 0;
     padding: 0;
