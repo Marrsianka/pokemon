@@ -120,6 +120,22 @@ header {
     overflow: hidden;
 }
 
+.poke-group-tab-info p {
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.poke-group-tab-info ul {
+    padding: 0 0 5px 30px;
+    margin: 0 0 5px 0;
+    list-style-type: circle;
+}
+
+.poke-group-tab-info a {    
+    text-decoration: none;
+    color: #3F51B5;
+}
+
 .poke-group-tab input:checked ~ .poke-group-tab-info {
     max-height: 100vh;
 }
@@ -296,6 +312,36 @@ header {
     background-image: url("img/types/water.png");
 }
 
+.badge {    
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left: 3px;
+}
+
+.badge.water {    
+    background-image: url("img/badges/badge_water.png");
+}
+
+.badge.stone {    
+    background-image: url("img/badges/badge_stone.png");
+}
+
+.badge.lightning {    
+    background-image: url("img/badges/badge_lightning.png");
+}
+
+.badge.heart {    
+    background-image: url("img/badges/badge_heart.png");
+}
+
+.badge.gold {    
+    background-image: url("img/badges/badge_gold.png");
+}
+
+.badge.grass {    
+    background-image: url("img/badges/badge_grass.png");
+}
 
 .poke-group-item-name {
  margin: 3px 3px 7px;
@@ -357,12 +403,13 @@ footer {
     background-color: #BF4E4E;
 }
 
-/*ставить к type, если у пойманного покемона какой-то тип пока что заблокирован*/
-.type.block {
+/*ставить block к type, если у пойманного покемона какой-то тип пока что заблокирован, и к badge, если нет значка в наличии*/
+.type.block, 
+.badge.block {
     opacity: 0.2;
 }
 
-/*ставить к item, когда покемон пойман (+ эволюцию)*/
+/*ставить done к item, когда покемон пойман (+ эволюцию)*/
 .done {
     opacity: 1;
 }
