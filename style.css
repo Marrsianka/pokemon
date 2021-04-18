@@ -413,3 +413,8 @@ footer {
 .done {
     opacity: 1;
 }
+
+/*ставить done к li, когда городской покемон пойман*/
+li.done {
+    text-decoration: line-through;
+}
