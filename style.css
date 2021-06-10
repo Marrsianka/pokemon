@@ -137,7 +137,7 @@ header {
 }
 
 .poke-group-tab input:checked ~ .poke-group-tab-info {
-    max-height: 100vh;
+    max-height: 150vh;
 }
 
 .poke-group-tab label::after {    
